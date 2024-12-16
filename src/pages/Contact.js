@@ -10,7 +10,7 @@ function Contact() {
         Contact Me
       </Typography>
 
-      <Paper elevation={3} sx={{ p: 4, mt: 2 }}>
+      <Paper elevation={0} sx={{ p: 4, mt: 2 }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <LocationOnIcon color="primary" />
@@ -22,10 +22,16 @@ function Contact() {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <LinkedInIcon color="primary" />
             <Link 
-              href="https://www.linkedin.com/in/your-linkedin" 
+              href="https://www.linkedin.com/in/bria-qaradaghy-a92361111/" 
               target="_blank"
               rel="noopener noreferrer"
               underline="hover"
+              sx={{
+                color: 'primary.main',
+                '&:hover': {
+                  color: 'secondary.main',
+                }
+              }}
             >
               LinkedIn Profile
             </Link>
@@ -36,6 +42,12 @@ function Contact() {
             <Link 
               href="mailto:your.email@example.com"
               underline="hover"
+              sx={{
+                color: 'primary.main',
+                '&:hover': {
+                  color: 'secondary.main',
+                }
+              }}
             >
               your.email@example.com
             </Link>
