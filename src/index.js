@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  // You can customize your theme here
+  // Your theme configuration
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
