@@ -7,6 +7,7 @@ import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Timeline from './pages/Timeline';
 
 const theme = createTheme({
   palette: {
@@ -107,6 +108,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/timeline" element={<Timeline />} />
           </Routes>
         </div>
       </Router>
